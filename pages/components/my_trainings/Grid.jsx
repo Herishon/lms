@@ -15,8 +15,8 @@ import IconArrowDown from '@/public/icons/IconArrowDown';
 export default function MyTrainingsGrid() {
 
     // img
-    const image1 = '/img/img (1).jpg';
-    const image2 = '/img/img (2).jpg';
+    const image1 = '/img/img1.jpg';
+    const image2 = '/img/img2.jpg';
 
     return (
         <>
