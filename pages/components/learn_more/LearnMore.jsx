@@ -14,15 +14,15 @@ export default function LearnMore() {
     <>
     <Navbar />
       <div className='container'>
-        <div className="bg-white w-[869px] rounded-t-3xl mx-auto mt-[73px]">
-          <h1 className='headline-3 text-lms-pine-tree text-center pt-[33px] pb-5'>Do you want to learn more?</h1>
-          <p className='headline-6 text-lms-atlantis text-center'>Please share your area of interest in the form below</p>
+        <div className="bg-white max-w-[869px] rounded-t-3xl mx-auto mt-[73px] xsm:px-[20px] md:px-[80px] lg:px-[112px]">
+          <h1 className='xsm:text-[30px] sm:text-[35px] md:text-[40px] lg:text-[49px] headline-3 text-lms-pine-tree text-center pt-[33px] pb-5'>Do you want to learn more?</h1>
+          <p className='xsm:text-[14px] md:text-[18px] lg:text-[20px] headline-6 text-lms-atlantis text-center'>Please share your area of interest in the form below</p>
         </div>
-          <form className="w-[869px] mx-auto pb-[214px] relative learn-more" action="#" method="POST">
+          <form className="max-w-[869px] mx-auto xsm:pb-[50px] md:pb-[140px] lg:pb-[214px] relative learn-more" action="#" method="POST">
             <div className='bg-white py-10 rounded-b-3xl box_shadow_4'>
-              <div className='px-[112px]'>
+              <div className='xsm:px-[20px] md:px-[80px] lg:px-[112px]'>
                 <div className="space-y-8">
-                  <div className="grid grid-cols-2 gap-8">
+                  <div className="grid xsm:grid-cols-1 sm:grid-cols-2 gap-8">
                     <div className="flex flex-col">
                       <label className="subtitle-1 text-lms-pine-tree" htmlFor="fullName">Full Name</label>
                       <input type="text" className="bg-lms-black-squeeze text-lms-pine-tree mt-[11px] px-4 pt-[13px] pb-4 rounded-lg subtitle-2 placeholder:subtitle-2 placeholder:text-lms-pine-tree" name="name" id="name" placeholder="Mehedi Hasan" />
@@ -63,11 +63,11 @@ export default function LearnMore() {
                     <p className='caption text-lms-pine-tree mt-1'>
                       Please provide a brief details on a the training, if it is a new training along with related links if available.
                     </p>
-                    <textarea className="bg-lms-black-squeeze w-[644px] h-[55px] mt-[11px] p-2 rounded-lg"></textarea>
+                    <textarea className="bg-lms-black-squeeze w-full h-[55px] mt-[11px] p-2 rounded-lg"></textarea>
                   </div>
                   <div>
                     <h5 className="subtitle-1 text-lms-pine-tree">Reason for your interest on this Training</h5>
-                    <textarea className="bg-lms-black-squeeze w-[644px] h-[100px] mt-[11px] p-2 rounded-lg"></textarea>
+                    <textarea className="bg-lms-black-squeeze w-full h-[100px] mt-[11px] p-2 rounded-lg"></textarea>
                     <p className='caption text-lms-pine-tree'>0 to 50 characters max</p>
                   </div>
                 </div>

@@ -172,26 +172,75 @@ body {
   box-shadow: 0px 8px 16px rgba(40, 44, 59, 0.03);
 }
 
+.line-clamp-none {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 0;
+}
+
+.line-clamp-1 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+}
+
+.line-clamp-2 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+.line-clamp-5 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 5;
+}
+
+/* hamburger menu */
+.hamburger-menu {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  cursor: pointer;
+}
+
+.lines {
+  width: 20px;
+  height: 2px;
+  display: inline-block;
+  background-color: #fff;
+}
+
+.hamburger-menu.active .line-2 {
+  display: none;
+}
+
+.hamburger-menu.active .line-1 {
+  transform: rotate(45deg) translateY(6px) translate(0px);
+}
+
+.hamburger-menu.active .line-3 {
+  transform: rotate(-45deg) translateY(-6px) translate(0px);
+}
+
 /* swiper slider */
 .swiper-button-prev,
 .swiper-prev-category,
 .swiper-button-next,
 .swiper-next-category {
-  @apply bg-lms-atlantis !w-[42px] !h-[42px] p-[9px] border border-lms-atlantis rounded-full;
+  @apply bg-lms-atlantis !w-[42px] !h-[42px] p-[9px] border border-lms-atlantis rounded-full !z-50;
 }
 
 .swiper-button-prev:after,
 .swiper-button-next:after {
   @apply text-lms-pine-tree font-bold;
   font-size: 19px !important;
-}
-
-.swiper-button-prev {
-  left: 180px !important;
-}
-
-.swiper-button-next {
-  right: 180px !important;
 }
 
 .swiper-button-prev:hover,
@@ -203,6 +252,16 @@ body {
 
 .swiper-prev-category img:hover {
   fill: red !important;
+}
+
+.swiper-button-prev,
+.swiper-prev-category {
+  left: 20px !important;
+}
+
+.swiper-button-next,
+.swiper-next-category {
+  right: 20px !important;
 }
 
 .swiper-button-prev:hover:after,
@@ -263,4 +322,22 @@ body {
 
 .learn-more input[type="checkbox"]:checked:after {
   display: block;
+}
+
+@media (min-width: 1870px) {
+  .swiper-button-prev {
+    left: 180px !important;
+  }
+  
+  .swiper-button-next {
+    right: 180px !important;
+  }
+
+  .swiper-prev-category {
+    left: 200px !important;
+  }
+
+  .swiper-next-category {
+    right: 200px !important;
+  }
 }

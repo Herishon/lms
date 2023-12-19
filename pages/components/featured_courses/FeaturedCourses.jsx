@@ -15,48 +15,48 @@ export default function FeaturedCourses() {
 
   return (
     <>
-       <div className='container py-[120px]'>
-          <h2 className='headline-3 !text-lms-pine-tree text-center'>Featured Courses</h2>
+       <div className='container pt-[60px] pb-[80px] md:pt-[100px] md:pb-[120px]'>
+          <h2 className='xsm:text-[35px] md:text-[40px] lg:text-[49px] headline-3 !text-lms-pine-tree text-center'>Featured Courses</h2>
           <div>
-            <ul className='flex justify-center items-center mt-[60px] gap-5'>
+            <ul className='flex xsm:justify-start sm:justify-center flex-wrap items-center mt-[60px] gap-5'>
               <li>
-                <Link className='bg-lms-pine-tree flex justify-center items-center gap-4 px-6 py-5 rounded-3xl box_shadow_4' href="">
-                  <div className='bg-lms-atlantis w-[48px] h-[48px] p-3 rounded-full box_shadow_3'>
+                <Link className='bg-lms-pine-tree flex justify-center items-center gap-4 xsm:px-4 md:px-5 lg:px-6 xsm:py-3 md:py-4 lg:py-5 rounded-3xl box_shadow_4' href="">
+                  <div className='bg-lms-atlantis xsm:w-[36px] md:w-[42px] lg:w-[48px] xsm:h-[36px] md:h-[42px] lg:h-[48px] flex justify-center items-center rounded-full box_shadow_3'>
                     <IconCategory />
                   </div>
-                  <span className='headline-6 !text-lms-atlantis'>All</span>
+                  <span className='xsm:text-[16px] md:text-[18px] lg:text-[20px] headline-6 !text-lms-atlantis'>All</span>
                 </Link>
               </li>
               <li>
-                <Link href="#" className='bg-[#fffffff0] flex justify-center items-center gap-4 px-6 py-5 rounded-3xl box_shadow_4'>
-                  <div className='w-[48px] h-[48px] p-3 rounded-full box_shadow_3'>
+                <Link href="#" className='bg-[#fffffff0] flex justify-center items-center gap-4 xsm:px-4 md:px-5 lg:px-6 xsm:py-3 md:py-4 lg:py-5 rounded-3xl box_shadow_4'>
+                  <div className='xsm:w-[36px] md:w-[42px] lg:w-[48px] xsm:h-[36px] md:h-[42px] lg:h-[48px] flex justify-center items-center rounded-full box_shadow_3'>
                     <IconSuitcase />
                   </div>
-                  <span className='headline-6 !text-lms-pine-tree'>Business</span>
+                  <span className='xsm:text-[16px] md:text-[18px] lg:text-[20px] headline-6 !text-lms-pine-tree'>Business</span>
                 </Link>
               </li>
               <li>
-                <Link href="#" className='bg-[#fffffff0] flex justify-center items-center gap-4 px-6 py-5 rounded-3xl box_shadow_4'>
-                  <div className='w-[48px] h-[48px] p-3 rounded-full box_shadow_3'>
+                <Link href="#" className='bg-[#fffffff0] flex justify-center items-center gap-4 xsm:px-4 md:px-5 lg:px-6 xsm:py-3 md:py-4 lg:py-5 rounded-3xl box_shadow_4'>
+                  <div className='xsm:w-[36px] md:w-[42px] lg:w-[48px] xsm:h-[36px] md:h-[42px] lg:h-[48px] flex justify-center items-center rounded-full box_shadow_3'>
                       <IconDesign />
                     </div>
-                    <span className='headline-6 !text-lms-pine-tree'>Design</span>
+                    <span className='xsm:text-[16px] md:text-[18px] lg:text-[20px] headline-6 !text-lms-pine-tree'>Design</span>
                 </Link>
               </li>
               <li>
-                <Link href="#" className='bg-[#fffffff0] flex justify-center items-center gap-4 px-6 py-5 rounded-3xl box_shadow_4'>
-                  <div className='w-[48px] h-[48px] p-3 rounded-full box_shadow_3'>
+                <Link href="#" className='bg-[#fffffff0] flex justify-center items-center gap-4 xsm:px-4 md:px-5 lg:px-6 xsm:py-3 md:py-4 lg:py-5 rounded-3xl box_shadow_4'>
+                  <div className='xsm:w-[36px] md:w-[42px] lg:w-[48px] xsm:h-[36px] md:h-[42px] lg:h-[48px] flex justify-center items-center rounded-full box_shadow_3'>
                       <IconMonitor />
                     </div>
-                    <span className='headline-6 !text-lms-pine-tree'>Development</span>
+                    <span className='xsm:text-[16px] md:text-[18px] lg:text-[20px] headline-6 !text-lms-pine-tree'>Development</span>
                 </Link>
               </li>
               <li>
-                <Link href="#" className='bg-[#fffffff0] flex justify-center items-center gap-4 px-6 py-5 rounded-3xl box_shadow_4'>
-                  <div className='w-[48px] h-[48px] p-3 rounded-full box_shadow_3'>
+                <Link href="#" className='bg-[#fffffff0] flex justify-center items-center gap-4 xsm:px-4 md:px-5 lg:px-6 xsm:py-3 md:py-4 lg:py-5 rounded-3xl box_shadow_4'>
+                  <div className='xsm:w-[36px] md:w-[42px] lg:w-[48px] xsm:h-[36px] md:h-[42px] lg:h-[48px] flex justify-center items-center rounded-full box_shadow_3'>
                       <IconPieChart />
                     </div>
-                    <span className='headline-6 !text-lms-pine-tree'>Project Management</span>
+                    <span className='xsm:text-[16px] md:text-[18px] lg:text-[20px] headline-6 !text-lms-pine-tree'>Project Management</span>
                 </Link>
               </li>
             </ul>

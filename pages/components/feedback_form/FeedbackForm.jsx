@@ -21,7 +21,7 @@ export default function FeedbackForm(props) {
       <div className='bg-lms-rangoon-green'>
         <div className='container py-[120px]'>
           <h5 className='headline-6 text-lms-atlantis text-center'>{ textForOne }</h5>
-          <h2 className='w-[870px] mx-auto headline-3 text-white text-center my-8'>{ textForTwo }</h2>
+          <h2 className='xsm:text-[30px] md:text-[40px] lg:text-[49px] lg:w-[870px] mx-auto headline-3 text-white text-center my-8'>{ textForTwo }</h2>
           <Link href="https://docs.google.com/forms/d/e/1FAIpQLSdKOZzjyvaiZlCMWeHnzSS9vd1ZCXF6uonN99o9fupcGG_naA/viewform" target='_blank'>
             <Button buttonText="write feedback" className='bg-lms-atlantis button mx-auto' />
           </Link>

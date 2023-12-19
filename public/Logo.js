@@ -97,9 +97,9 @@ const Logo = ({ color, ...rest }) => {
           width="11" 
           height="9.5" 
           filterUnits="userSpaceOnUse" 
-          color-interpolation-filters="sRGB">
+          colorInterpolationFilters="sRGB">
           <feFlood 
-            flood-opacity="0" 
+            floodOpacity="0" 
             result="BackgroundImageFix"
           />
           <feColorMatrix 

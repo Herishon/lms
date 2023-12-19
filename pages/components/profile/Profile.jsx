@@ -26,30 +26,29 @@ export default function Profile() {
                 
                 {/* profile */}
                 <div>
-                    <div className='w-[644px] h-auto bg-[#fffffff0] mx-auto rounded-3xl'>
+                    <div className='max-w-[644px] h-auto bg-[#fffffff0] mx-auto rounded-3xl'>
                         <div className='pt-12'>
-                            <span className='w-[100px] h-[100px] bg-lms-atlantis rounded-full mx-auto flex justify-center items-center headline-4 text-lms-pine-tree'>M</span>
+                            <span className='xsm:w-[60px] md:w-[80px] lg:w-[100px] xsm:h-[60px] md:h-[80px] lg:h-[100px] bg-lms-atlantis rounded-full mx-auto flex justify-center items-center xsm:text-[24px] md:text-[28px] lg:text-[35px] headline-4 text-lms-pine-tree'>M</span>
                             <h5 className='headline-6 text-lms-pine-tree text-center mt-4'>Mehedi Hasan</h5>
                             <Link href="/components/change_password/ChangePassword">
                                 <Button buttonText="change password" className="bg-transparent border border-lms-pine-tree mx-auto mt-6 button" />
                             </Link>
-                            
                         </div>
                         <div className='mt-8'>
-                            <div className='bg-lms-pine-tree p-8 rounded-3xl flex justify-center gap-[72px]'>
-                                <div className='flex flex-col items-center'>
+                            <div className='bg-lms-pine-tree p-8 rounded-3xl flex justify-center items-center flex-wrap gap-x-[72px] gap-y-[30px]'>
+                                <div className='flex flex-col basis-[80px] items-center justify-center'>
                                     <span className='headline-4 text-lms-atlantis'>6</span>
                                     <span className='subtitle-1 text-white opacity-80 mt-3'>Courses</span>
                                 </div>
-                                <div className='flex flex-col items-center'>
+                                <div className='flex flex-col basis-[80px] items-center justify-center'>
                                     <span className='headline-4 text-lms-atlantis'>0</span>
                                     <span className='subtitle-1 text-white opacity-80 mt-3'>Completed</span>
                                 </div>
-                                <div className='flex flex-col items-center'>
+                                <div className='flex flex-col basis-[80px] items-center justify-center'>
                                     <span className='headline-4 text-lms-atlantis'>0</span>
                                     <span className='subtitle-1 text-white opacity-80 mt-3'>Certificate</span>
                                 </div>
-                                <div className='flex flex-col items-center'>
+                                <div className='flex flex-col basis-[80px] items-center justify-center'>
                                     <span className='headline-4 text-lms-atlantis'>0</span>
                                     <span className='subtitle-1 text-white opacity-80 mt-3'>Points</span>
                                 </div>
@@ -59,7 +58,7 @@ export default function Profile() {
                 </div>
 
                 {/* achivement */}
-                <div className='w-[644px] h-auto bg-[#fffffff0] mx-auto mt-10 p-[32px] rounded-3xl'>
+                <div className='max-w-[644px] h-auto bg-[#fffffff0] mx-auto mt-10 p-[32px] rounded-3xl'>
                     <h3 className='headline-6 text-lms-pine-tree text-center opacity-80'>My Achivements</h3>
                     <div className='flex justify-center mt-6 gap-[32px]'>
                         <div className='relative'>
@@ -78,9 +77,9 @@ export default function Profile() {
                 </div>
 
                 {/* leaderboard */}
-                <div className='w-[644px] h-auto bg-[#fffffff0] mx-auto mt-10 mb-[120px] p-[32px] rounded-3xl relative'>
+                <div className='max-w-[644px] h-auto bg-[#fffffff0] mx-auto mt-10 mb-[120px] xsm:px-[5px] md:px-[32px] pt-[32px] rounded-3xl relative'>
                     <h3 className='headline-6 text-lms-pine-tree text-center opacity-80'>Leaderboard</h3>
-                    <div className='flex justify-center mt-6 gap-6'>
+                    <div className='flex justify-center overflow-auto mt-6 pb-[32px] gap-6'>
                         <div className='group'>
                             <div className='relative'>
                                 <span className='bg-[#DAB5FF] w-12 h-12 flex justify-center items-center rounded-full subtitle-1'>J</span>

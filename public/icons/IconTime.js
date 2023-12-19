@@ -15,17 +15,17 @@ const IconTime = ({ color, ...rest }) => {
           cy="12" 
           r="9" 
           stroke={ color || "#24281D" } 
-          stroke-width="2" 
-          stroke-linecap="round" 
-          stroke-linejoin="round"
+          strokeWidth="2" 
+          strokeLinecap="round" 
+          strokeLinejoin="round"
         />
         <path 
           id="Vector_2" 
           d="M11 8V13H16" 
           stroke={ color || "#24281D" } 
-          stroke-width="2" 
-          stroke-linecap="round" 
-          stroke-linejoin="round"
+          strokeWidth="2" 
+          strokeLinecap="round" 
+          strokeLinejoin="round"
         />
       </g>
     </svg>

@@ -1,7 +1,8 @@
 'use client';
 
 // npm packages
-import React from 'react'
+import React from 'react';
+import Head from 'next/head';
 
 // components
 import Navbar from '@/pages/components/header/Navbar';
@@ -15,6 +16,9 @@ export default function HomePage() {
 
     return (
         <>
+            <Head>
+                <title>Hello</title>
+            </Head>
             <Navbar />
             <HomeSlider />
             <Cards />

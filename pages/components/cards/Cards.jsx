@@ -13,7 +13,7 @@ export default function Cards() {
   return (
     <>
       <div className='container pt-[120px] pb-[118px]'>
-        <div className='flex justify-center gap-8'>
+        <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8'>
           <Card1 />
           <Card2 />
           <Card3 />

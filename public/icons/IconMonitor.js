@@ -12,25 +12,25 @@ const IconMonitor = ({ color, ...rest }) => {
           id="Vector" 
           d="M20 4H4C2.89543 4 2 4.89543 2 6V15C2 16.1046 2.89543 17 4 17H20C21.1046 17 22 16.1046 22 15V6C22 4.89543 21.1046 4 20 4Z" 
           stroke={ color || "#24281D" } 
-          stroke-width="2" 
-          stroke-linecap="round" 
-          stroke-linejoin="round"
+          strokeWidth="2" 
+          strokeLinecap="round" 
+          strokeLinejoin="round"
         />
         <path 
           id="Vector_2" 
           d="M8 21H16" 
           stroke={ color || "#24281D" } 
-          stroke-width="2" 
-          stroke-linecap="round" 
-          stroke-linejoin="round"
+          strokeWidth="2" 
+          strokeLinecap="round" 
+          strokeLinejoin="round"
         />
         <path 
           id="Vector_3" 
           d="M12 18V21" 
           stroke={ color || "#24281D" } 
-          stroke-width="2" 
-          stroke-linecap="round" 
-          stroke-linejoin="round"
+          strokeWidth="2" 
+          strokeLinecap="round" 
+          strokeLinejoin="round"
         />
       </g>
     </svg>

@@ -43,23 +43,42 @@ export default function CategoryCoursesSlider() {
               prevEl: ".swiper-prev-category",
             }}
             onSlideChange={() => console.log('slide change')}
-            onSwiper={(swiper) => console.log(swiper)}>
+            onSwiper={(swiper) => console.log(swiper)}
+            breakpoints={{
+              300: {
+                slidesPerView: 1,
+                spaceBetween: 10,
+              },
+              640: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+              },
+              768: {
+                slidesPerView: 2,
+                spaceBetween: 22,
+              },
+              1024: {
+                slidesPerView: 3,
+                spaceBetween: 32,
+              },
+            }}
+            >
             
             {/* slide 1 */}
             <SwiperSlide>
               {/* Card */}
               <Link href="/components/project_management/List">
-                <div className='w-[419px] h-[394px] bg-white rounded-3xl cursor-pointer box_shadow_6'>
+                <div className='mx-w-[419px] mx-mx-h-[394px] bg-white rounded-3xl cursor-pointer box_shadow_6'>
                   <div className='relative'>
-                    <Image className='object-cover rounded-3xl' src={ image1 } width={ 419 } height={ 239 } alt="logo" />
+                    <Image className='w-full object-cover rounded-3xl' src={ image1 } width={ 419 } height={ 239 } alt="logo" />
                     <div className='absolute top-0 right-0 bottom-0 left-0 rounded-3xl bg_overlay_shadow'></div>
                     <span className='bg-lms-black-squeeze px-3 py-2 rounded-[18px] absolute bottom-6 left-[36px] subtitle-2 text-lms-pine-tree'>Project Management</span>
                   </div>
-                  <div className='px-8 pb-8 pt-6'>
+                  <div className='xsm:px-5 sm:px-8 xsm:pb-5 sm:pb-8 xsm:pt-4 sm:pt-6'>
                     <h3 className='headline-6 text-lms-pine-tree'>
                       Explore Management Concepts through Metaphor and Music
                     </h3>
-                    <div className='flex justify-center items-center mt-6 gap-8 opacity-80'>
+                    <div className='flex flex-wrap items-center mt-6 gap-x-8 gap-y-5 opacity-80'>
                       <div className='flex items-center gap-[6px]'>
                         <IconTime />
                         <span className='subtitle-2'>254h 50m</span>
@@ -82,9 +101,9 @@ export default function CategoryCoursesSlider() {
             <SwiperSlide>
               <Link href="/components/project_management/List">
                 {/* Card */}
-                <div className='w-[419px] h-[394px] bg-white rounded-3xl cursor-pointer box_shadow_6'>
+                <div className='mx-w-[419px] mx-h-[394px] bg-white rounded-3xl cursor-pointer box_shadow_6'>
                   <div className='relative'>
-                    <Image className='object-cover rounded-3xl' src={ image2 } width={ 419 } height={ 239 } alt="logo" />
+                    <Image className='w-full object-cover rounded-3xl' src={ image2 } width={ 419 } height={ 239 } alt="logo" />
                     <div className='absolute top-0 right-0 bottom-0 left-0 rounded-3xl bg_overlay_shadow'></div>
                     <span className='bg-lms-black-squeeze px-3 py-2 rounded-[18px] absolute bottom-6 left-[36px] subtitle-2 text-lms-pine-tree'>Project Management</span>
                   </div>
@@ -92,7 +111,7 @@ export default function CategoryCoursesSlider() {
                     <h3 className='headline-6 text-lms-pine-tree'>
                       Explore Management Concepts through Metaphor and Music
                     </h3>
-                    <div className='flex justify-center items-center mt-6 gap-8 opacity-80'>
+                    <div className='flex flex-wrap items-center mt-6 gap-x-8 gap-y-5 opacity-80'>
                       <div className='flex items-center gap-[6px]'>
                         <IconTime />
                         <span className='subtitle-2'>254h 50m</span>
@@ -115,9 +134,9 @@ export default function CategoryCoursesSlider() {
             <SwiperSlide>
               <Link href="/components/project_management/List">
                 {/* Card */}
-                <div className='w-[419px] h-[394px] bg-white rounded-3xl cursor-pointer box_shadow_6'>
+                <div className='mx-w-[419px] mx-h-[394px] bg-white rounded-3xl cursor-pointer box_shadow_6'>
                   <div className='relative'>
-                    <Image className='object-cover rounded-3xl' src={ image3 } width={ 419 } height={ 239 } alt="logo" />
+                    <Image className='w-full object-cover rounded-3xl' src={ image3 } width={ 419 } height={ 239 } alt="logo" />
                     <div className='absolute top-0 right-0 bottom-0 left-0 rounded-3xl bg_overlay_shadow'></div>
                     <span className='bg-lms-black-squeeze px-3 py-2 rounded-[18px] absolute bottom-6 left-[36px] subtitle-2 text-lms-pine-tree'>Project Management</span>
                   </div>
@@ -125,7 +144,7 @@ export default function CategoryCoursesSlider() {
                     <h3 className='headline-6 text-lms-pine-tree'>
                       Explore Management Concepts through Metaphor and Music
                     </h3>
-                    <div className='flex justify-center items-center mt-6 gap-8 opacity-80'>
+                    <div className='flex flex-wrap items-center mt-6 gap-x-8 gap-y-5 opacity-80'>
                       <div className='flex items-center gap-[6px]'>
                         <IconTime />
                         <span className='subtitle-2'>254h 50m</span>
@@ -148,9 +167,9 @@ export default function CategoryCoursesSlider() {
             <SwiperSlide>
               <Link href="/components/project_management/List">
                 {/* Card */}
-                <div className='w-[419px] h-[394px] bg-white rounded-3xl cursor-pointer box_shadow_6'>
+                <div className='mx-w-[419px] mx-h-[394px] bg-white rounded-3xl cursor-pointer box_shadow_6'>
                   <div className='relative'>
-                    <Image className='object-cover rounded-3xl' src={ image1 } width={ 419 } height={ 239 } alt="logo" />
+                    <Image className='w-full object-cover rounded-3xl' src={ image1 } width={ 419 } height={ 239 } alt="logo" />
                     <div className='absolute top-0 right-0 bottom-0 left-0 rounded-3xl bg_overlay_shadow'></div>
                     <span className='bg-lms-black-squeeze px-3 py-2 rounded-[18px] absolute bottom-6 left-[36px] subtitle-2 text-lms-pine-tree'>Project Management</span>
                   </div>
@@ -158,7 +177,7 @@ export default function CategoryCoursesSlider() {
                     <h3 className='headline-6 text-lms-pine-tree'>
                       Explore Management Concepts through Metaphor and Music
                     </h3>
-                    <div className='flex justify-center items-center mt-6 gap-8 opacity-80'>
+                    <div className='flex flex-wrap items-center mt-6 gap-x-8 gap-y-5 opacity-80'>
                       <div className='flex items-center gap-[6px]'>
                         <IconTime />
                         <span className='subtitle-2'>254h 50m</span>
@@ -181,9 +200,9 @@ export default function CategoryCoursesSlider() {
             <SwiperSlide>
               <Link href="/components/project_management/List">
                 {/* Card */}
-                <div className='w-[419px] h-[394px] bg-white rounded-3xl cursor-pointer box_shadow_6'>
+                <div className='mx-w-[419px] mx-h-[394px] bg-white rounded-3xl cursor-pointer box_shadow_6'>
                   <div className='relative'>
-                      <Image className='object-cover rounded-3xl' src={ image1 } width={ 419 } height={ 239 } alt="logo" />
+                      <Image className='w-full object-cover rounded-3xl' src={ image1 } width={ 419 } height={ 239 } alt="logo" />
                       <div className='absolute top-0 right-0 bottom-0 left-0 rounded-3xl bg_overlay_shadow'></div>
                       <span className='bg-lms-black-squeeze px-3 py-2 rounded-[18px] absolute bottom-6 left-[36px] subtitle-2 text-lms-pine-tree'>Project Management</span>
                   </div>
@@ -191,7 +210,7 @@ export default function CategoryCoursesSlider() {
                     <h3 className='headline-6 text-lms-pine-tree'>
                         Explore Management Concepts through Metaphor and Music
                     </h3>
-                    <div className='flex justify-center items-center mt-6 gap-8 opacity-80'>
+                    <div className='flex flex-wrap items-center mt-6 gap-x-8 gap-y-5 opacity-80'>
                         <div className='flex items-center gap-[6px]'>
                             <IconTime />
                             <span className='subtitle-2'>254h 50m</span>
@@ -214,9 +233,9 @@ export default function CategoryCoursesSlider() {
             <SwiperSlide>
               <Link href="/components/project_management/List">
                 {/* Card */}
-                <div className='w-[419px] h-[394px] bg-white rounded-3xl cursor-pointer box_shadow_6'>
+                <div className='mx-w-[419px] mx-h-[394px] bg-white rounded-3xl cursor-pointer box_shadow_6'>
                   <div className='relative'>
-                      <Image className='object-cover rounded-3xl' src={ image2 } width={ 419 } height={ 239 } alt="logo" />
+                      <Image className='w-full object-cover rounded-3xl' src={ image2 } width={ 419 } height={ 239 } alt="logo" />
                       <div className='absolute top-0 right-0 bottom-0 left-0 rounded-3xl bg_overlay_shadow'></div>
                       <span className='bg-lms-black-squeeze px-3 py-2 rounded-[18px] absolute bottom-6 left-[36px] subtitle-2 text-lms-pine-tree'>Project Management</span>
                   </div>
@@ -224,7 +243,7 @@ export default function CategoryCoursesSlider() {
                     <h3 className='headline-6 text-lms-pine-tree'>
                         Explore Management Concepts through Metaphor and Music
                     </h3>
-                    <div className='flex justify-center items-center mt-6 gap-8 opacity-80'>
+                    <div className='flex flex-wrap items-center mt-6 gap-x-8 gap-y-5 opacity-80'>
                         <div className='flex items-center gap-[6px]'>
                             <IconTime />
                             <span className='subtitle-2'>254h 50m</span>
@@ -247,9 +266,9 @@ export default function CategoryCoursesSlider() {
             <SwiperSlide>
               <Link href="/components/project_management/List">
                 {/* Card */}
-                <div className='w-[419px] h-[394px] bg-white rounded-3xl cursor-pointer box_shadow_6'>
+                <div className='mx-w-[419px] mx-h-[394px] bg-white rounded-3xl cursor-pointer box_shadow_6'>
                   <div className='relative'>
-                      <Image className='object-cover rounded-3xl' src={ image3 } width={ 419 } height={ 239 } alt="logo" />
+                      <Image className='w-full object-cover rounded-3xl' src={ image3 } width={ 419 } height={ 239 } alt="logo" />
                       <div className='absolute top-0 right-0 bottom-0 left-0 rounded-3xl bg_overlay_shadow'></div>
                       <span className='bg-lms-black-squeeze px-3 py-2 rounded-[18px] absolute bottom-6 left-[36px] subtitle-2 text-lms-pine-tree'>Project Management</span>
                   </div>
@@ -257,7 +276,7 @@ export default function CategoryCoursesSlider() {
                     <h3 className='headline-6 text-lms-pine-tree'>
                         Explore Management Concepts through Metaphor and Music
                     </h3>
-                    <div className='flex justify-center items-center mt-6 gap-8 opacity-80'>
+                    <div className='flex flex-wrap items-center mt-6 gap-x-8 gap-y-5 opacity-80'>
                         <div className='flex items-center gap-[6px]'>
                             <IconTime />
                             <span className='subtitle-2'>254h 50m</span>
@@ -280,9 +299,9 @@ export default function CategoryCoursesSlider() {
             <SwiperSlide>
               <Link href="/components/project_management/List">
                 {/* Card */}
-                <div className='w-[419px] h-[394px] bg-white rounded-3xl cursor-pointer box_shadow_6'>
+                <div className='mx-w-[419px] mx-h-[394px] bg-white rounded-3xl cursor-pointer box_shadow_6'>
                   <div className='relative'>
-                      <Image className='object-cover rounded-3xl' src={ image1 } width={ 419 } height={ 239 } alt="logo" />
+                      <Image className='w-full object-cover rounded-3xl' src={ image1 } width={ 419 } height={ 239 } alt="logo" />
                       <div className='absolute top-0 right-0 bottom-0 left-0 rounded-3xl bg_overlay_shadow'></div>
                       <span className='bg-lms-black-squeeze px-3 py-2 rounded-[18px] absolute bottom-6 left-[36px] subtitle-2 text-lms-pine-tree'>Project Management</span>
                   </div>
@@ -290,7 +309,7 @@ export default function CategoryCoursesSlider() {
                     <h3 className='headline-6 text-lms-pine-tree'>
                         Explore Management Concepts through Metaphor and Music
                     </h3>
-                    <div className='flex justify-center items-center mt-6 gap-8 opacity-80'>
+                    <div className='flex flex-wrap items-center mt-6 gap-x-8 gap-y-5 opacity-80'>
                         <div className='flex items-center gap-[6px]'>
                             <IconTime />
                             <span className='subtitle-2'>254h 50m</span>
@@ -310,10 +329,10 @@ export default function CategoryCoursesSlider() {
             </SwiperSlide>
           </Swiper>
       </div>
-      <button className='swiper-prev-category absolute top-1/3 left-[200px] group leading-none'>
+      <button className='swiper-prev-category absolute top-1/3 group leading-none'>
         <FontAwesomeIcon icon={ faChevronLeft } className='text-lg text-[#24281D] font-normal opacity-85 group-hover:text-lms-atlantis' />
       </button>
-      <button className='swiper-next-category absolute top-1/3 right-[200px] group leading-none'>
+      <button className='swiper-next-category absolute top-1/3 group leading-none'>
         <FontAwesomeIcon icon={ faChevronLeft } className='text-lg text-[#24281D] font-normal rotate-180 opacity-85 group-hover:text-lms-atlantis' />
       </button>
       </div>

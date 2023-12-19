@@ -18,9 +18,9 @@ import FeedbackForm from '@/pages/components/feedback_form/FeedbackForm';
 export default function ProjectManagementList() {
 
   // img
-  const image1 = '/img/img (1).jpg';
-  const image2 = '/img/img (2).jpg';
-  const image3 = '/img/img (3).jpg';
+  const image1 = '/img/img1.jpg';
+  const image2 = '/img/img2.jpg';
+  const image3 = '/img/img3.jpg';
 
   return (
     <>
