@@ -2,7 +2,7 @@
 
 // npm package
 import React from 'react';
-import Script from 'next/script';
+// import Script from 'next/script';
 
 // components
 import LearnDashNav from '@/pages/components/header/LearnDashNav';
@@ -15,7 +15,7 @@ export default function LearnPageSeven() {
 
   return (
     <>
-        <Script src='./components/learndash/js/app.js' defer />
+        {/* <Script src='./components/learndash/js/app.js' defer /> */}
 
         <LearnDashNav />
         <div className='flex pt-[76px]'>
@@ -23,7 +23,7 @@ export default function LearnPageSeven() {
                 <div className='bg-lms-atlantis px-5 py-[32px] flex items-center justify-between gap-[43px]'>
                     <h2 className='headline-6 text-lms-pine-tree'>The 7 Steps of Machine Learning</h2>
                     <div className='w-10 h-10 bg-[#77ac0e] rounded-full cursor-pointer'>
-                        <IconArrowLeft onClick='toggleNav()' />
+                        <IconArrowLeft />
                     </div>
                 </div>
                 <div className='px-[20px] py-[34px'>
